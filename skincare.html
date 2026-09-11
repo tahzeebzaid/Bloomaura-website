@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloomAura — Skincare & Makeup</title>
+  <link rel="icon" type="image/png" href="logos.png">
+  <link rel="stylesheet" href="skincare.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+</head>
+<body>
+ <!-- Notification Bar -->
+<div class="notification-wrap">
+  <div class="notification">
+    <span id="notif-text"></span>
+  </div>
+  <a class="notif-cta" href="signin.html">Sign In</a>
+</div>
+
+<!-- Header / Navbar -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="logos.png" alt="BloomAura Logo" class="logo-icon" />
+      <div class="logo-texts">
+        <div class="brand">BloomAura</div>
+        <div class="tagline">Skincare & Makeup Products</div>
+      </div>
+      
+        
+      </div>
+   
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html" class="active">Home</a></li>
+       
+        
+          <li><a href="skincare.html">Skincare</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+    
+        
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  
+<!-- Hero Banner / Slider -->
+  <section class="hero-slider">
+    <div class="slider-container">
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="mositurizer.png" alt="Moisturizer">
+        <div class="slide-text">
+          <h1>Glow Naturally with Our Skincare Collection</h1>
+          <p>Hydration, Care & Confidence in Every Drop</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="serum.png" alt="Serum">
+        <div class="slide-text">
+          <h1>Brighten Your Skin</h1>
+          <p>Powerful serums for a radiant glow</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="cream.png" alt="Cream">
+        <div class="slide-text">
+          <h1>Moisture That Lasts</h1>
+          <p>Soft, smooth, and nourished skin</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img src="facewashbg.png" alt="Face Wash">
+        <div class="slide-text">
+          <h1>Gentle Care for Every Skin</h1>
+          <p>Daily essentials for a fresh start</p>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <img src="sunblockbg.png" alt="Sunscreen">
+        <div class="slide-text">
+          <h1>Protect Your Glow</h1>
+          <p>Shield your skin with advanced care</p>
+        </div>
+      </div>
+
+      
+
+      <!-- Dots -->
+      <div class="dots"></div>
+    </div>
+  </section>
+<section class="skincare-products" data-aos="fade-up">
+      <h2>Our Skincare Collection</h2>
+      <div class="product-grid"data-aos="fade-up">
+        <!-- 12 Skincare Product Cards -->
+        <section class="products-section" data-aos="fade-up">
+  
+  <div class="products-grid" data-aos="fade-up">
+
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="hydraclean.png" alt="Hydra Cleanser"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Hydra Cleanser</h4>
+        <p class="prod-price">PKR 899</p>
+        <p class="prod-desc">Gentle cleanser for daily use.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="hydraclean.html" class="more">More details</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="glowkit2.png" alt="Glow Kit"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Glow Kit</h4>
+        <p class="prod-price">PKR 2,999</p>
+        <p class="prod-desc">All-in-one kit for daily radiance.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="glowkit.html" class="more"  onclick="openModal('Glow Kit','Transparent, White, Pink',' For Dry Skin Types','Rs.2999','100ml, 150ml, 200ml ',
+                  'Enhances your natural radiance with a soft, luminous glow.Smooth, blendable formulas highlight your features effortlessly.Perfect for achieving a fresh, glowing look for any occasion','In Stock'); return false;">More details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="toner2.png" alt="Toner Mist"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Toner Mist</h4>
+        <p class="prod-price">PKR 699</p>
+        <p class="prod-desc">Refreshing toner to balance skin pH.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="#" class="more" onclick="openModal('Toner Mist','Transparent, White, Sky blue',' For All Skin Types','Rs.699','50ml, 100ml, 200ml ',
+                  'Refreshes and balances skin for an instant boost of hydration.Lightweight mist tightens pores and preps skin for makeup.Soothing formula leaves your skin calm, soft, and revitalized.','In Stock'); return false;">More details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="nightcream.png" alt="Night Repair Cream"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Night Repair Cream</h4>
+        <p class="prod-price">PKR 1,799</p>
+        <p class="prod-desc">Rich moisturizer for overnight repair.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="#" class="more" onclick="openModal('Night Cream','Transparent, White, Pink, Green',' For All Skin Types','Rs.1799','80ml, 100ml, 200ml ',
+                  'Deeply nourishes skin while you sleep for a healthy glow.Helps repair and hydrate skin overnight without feeling greasy.Wake up to soft, smooth, and refreshed-looking skin.','In Stock'); return false;">More details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="sunblock.png" alt="Sun Shield SPF 50"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Sun Shield SPF 50</h4>
+        <p class="prod-price">PKR 1,199</p>
+        <p class="prod-desc">Daily sunscreen, non-greasy formula.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="#" class="more" onclick="openModal('Sunblock','Transparent, White, Pink, Black, Purple',' For All Skin Types','Rs.1199','100ml, 150ml, 200ml ',
+                  'Protects skin from harmful UVA and UVB rays to prevent sun damage and tanning. Lightweight, non-greasy formula absorbs quickly without leaving a white cast. Keeps your skin safe, hydrated, and comfortable throughout the day.','In Stock'); return false;">More details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-aos="zoom-in">
+      <div class="prod-img"><img src="hydramask.png" alt="Hydra Mask"></div>
+      <div class="prod-info">
+        <h4 class="prod-name">Hydra Mask</h4>
+        <p class="prod-price">PKR 449</p>
+        <p class="prod-desc">Weekly hydrating face mask.</p>
+        <div class="prod-actions">
+          <button class="btn add">Add to Cart</button>
+          <a href="#" class="more" onclick="openModal('HydraMask','Transparent, White',' For All Skin Types','Rs.499','100ml, 150ml, 200ml ',
+                  'Deeply hydrates and replenishes moisture to revive tired, dry skin. Rich yet soothing formula helps restore softness and improve skin texture. Leaves your skin feeling refreshed, plump, and glowing after every use.','In Stock'); return false;">More details</a>
+        </div>
+      </div>
+    </div>
+<div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="GlowSerum.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Glow Serum</h4>
+                <p class="prod-price">PKR 1,499</p>
+                <p class="prod-desc">Lightweight vitamin C serum for radiant skin.</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more"  onclick="openModal('Glow Serum','Transparent, White',' For All Skin Types','Rs.1499','100ml, 200ml ',
+                  'Brightens and evens skin tone for a radiant look.Lightweight formula absorbs quickly without leaving residue.Packed with vitamins to nourish and hydrate your skin all day','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     <div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="facecream2.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Hydrating Face Cream</h4>
+                <p class="prod-price">PKR 1,000</p>
+                <p class="prod-desc">Moisturizing cream for glowing healthy skin</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more"  onclick="openModal('Hydrating Face Cream','White, Transparent',' For All Skin Types','Rs.500','150ml, 200ml, 250ml ',
+                  'A lightweight hydrating face cream that deeply moisturizes the skin while locking in essential nutrients. It helps restore the skin’s natural barrier, leaving your face soft, smooth, and refreshed all day. Perfect for daily use to maintain a healthy, glowing complexion.','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     <div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="facewash.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Facewash</h4>
+                <p class="prod-price">PKR 499</p>
+                <p class="prod-desc">Gentle cleansing face wash for daily use.</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more" onclick="openModal('Facewash','White, Pink, Brown, Cofee, Orange, Purple',' For All Skin Types','Rs.600','50ml, 30ml, 100ml ',
+                  'A gentle facewash that effectively removes dirt, oil, and impurities without stripping the skin’s natural moisture. It deeply cleanses pores while refreshing and revitalizing your complexion. Perfect for daily use to keep skin clean, soft, and healthy-looking.','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     <div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="vitamin c.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Serum Vitamin C</h4>
+                <p class="prod-price">PKR 900</p>
+                <p class="prod-desc">Brightening serum with pure Vitamin C extract</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more"  onclick="openModal('Serum Vitamin C','Orange, Cofee, Brown',' For All Skin Types','Rs.900','20ml, 30ml, 40ml ',
+                  'A powerful vitamin C serum that brightens the skin and boosts natural radiance. It helps reduce dark spots and uneven tone while supporting collagen for a smoother appearance. With regular use, skin looks fresh, glowing, and healthy.','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     <div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="acne.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Acne mask</h4>
+                <p class="prod-price">PKR 700</p>
+                <p class="prod-desc">Remove pimples and acne for clear skin.</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more"  onclick="openModal('Acne Mask','Pink, Transparent, White',' For All Skin Types','Rs.700','20ml, 30ml, 40ml ',
+                  'An acne mask helps to deeply cleanse the skin by removing excess oil, dirt, and impurities from clogged pores. It reduces acne-causing bacteria and helps calm inflammation, making breakouts less noticeable. Regular use can improve skin texture and promote clearer, healthier-looking skin.','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     <div class="product" data-aos="zoom-in">
+              <div class="prod-img"><img src="bodylotion.png" alt="Product 1"></div>
+              <div class="prod-info">
+                <h4 class="prod-name">Body Lotion</h4>
+                <p class="prod-price">PKR 600</p>
+                <p class="prod-desc">Mosturizing and glowing the skin</p>
+                <div class="prod-actions">
+                  <button class="btn add">Add to Cart</button>
+                  <a href="#" class="more"  onclick="openModal('Body Lotion','Orange, White, Transparent',' For All Skin Types','Rs.600','100ml, 150ml, 200ml ',
+                  'Our body lotion deeply moisturizes the skin, leaving it soft, smooth, and refreshed all day long. Its lightweight, non-greasy formula absorbs quickly to nourish and protect dry skin. With regular use, it helps improve skin texture and gives a healthy, natural glow.','In Stock'); return false;">More details</a>
+                </div>
+              </div>
+            </div>
+     
+  </div>
+
+</section>
+<!-- Offer Banner Section -->
+ <section>
+<div class="offer-banner" data-aos="fade-up">
+  <p id="offer-text" data-aos="fade-down">Special Discount on Skincare Products!</p>
+</div>
+</section>
+<!-- Customer Testimonials Section -->
+<section class="skincare-testimonials" data-aos="fade-up">
+  <h2> Find the Right Routine for Your Skin</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial-track" id="testimonial-track">
+      
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="body lotion.png" alt="Customer 1">
+        <p class="review">“Feels tight, rough, or flaky due to lack of moisture."</p>
+        
+        <h4> For Dry skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="vitamin c.png" alt="Customer 2">
+        <p class="review">“Shiny and prone to acne because of excess sebum.”</p>
+        
+        <h4>For oily skin </h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="nightcream.png" alt="Customer 3">
+        <p class="review">“Balanced, smooth, and rarely experiences issues.”</p>
+       
+        <h4> For Normal Skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="sunblock.png" alt="Customer 4">
+        <p class="review">“Oily in some areas, dry in others (usually T-zone oily).”</p>
+        
+        <h4>For Combination Skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="eye cream.png" alt="Customer 5">
+        <p class="review">“Easily irritated, red, or itchy from products or environment."</p>
+        
+        <h4> For Sensitive Skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="GlowSerum.png" alt="Customer 6">
+        <p class="review">“Frequently develops pimples, blackheads, or breakouts.”</p>
+        
+        <h4>For Acne-Prone Skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="facecream2.png" alt="Customer 7">
+        <p class="review">“Lacks water, looks dull and feels tight even if oily.”</p>
+        
+        <h4> For Dehydrated Skin</h4>
+      </div>
+
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <img src="facewash.png" alt="Customer 8">
+        <p class="review">“Shows fine lines, wrinkles, and loss of elasticity.”</p>
+        
+        <h4>For Mature/Aging Skin</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</section>
+
+<section class="skincare-tips" data-aos="fade-right">
+  <h2 class="tips-heading" data-aos="fade-up">How to Use – Skincare Routine</h2>
+  <div class="tips-container" data-aos="fade-down">
+    <div class="tip-card" data-aos="slide-down">
+      <span class="step-number">1</span>
+      <h3>Cleanser</h3>
+      <p>Start with a gentle cleanser to remove dirt, oil & impurities.</p>
+    </div>
+    <div class="tip-card" data-aos="slide-down">
+      <span class="step-number">2</span>
+      <h3>Toner</h3>
+      <p>Apply toner to balance skin’s pH and tighten pores.</p>
+    </div>
+    <div class="tip-card" data-aos="slide-down">
+      <span class="step-number">3</span>
+      <h3>Serum</h3>
+      <p>Use serum for targeted treatment like hydration or brightening.</p>
+    </div>
+    <div class="tip-card" data-aos="slide-down">
+      <span class="step-number">4</span>
+      <h3>Moisturizer</h3>
+      <p>Lock in hydration with a lightweight or rich moisturizer.</p>
+    </div>
+    <div class="tip-card" data-aos="slide-down">
+      <span class="step-number">5</span>
+      <h3>Sunscreen</h3>
+      <p>Finish with SPF to protect your skin from sun damage.</p>
+    </div>
+  
+  <div class="tip-card" data-aos="slide-down">
+  <span class="step-number">6</span>
+  <h3>Eye Cream</h3>
+  <p>Gently apply eye cream to reduce puffiness and dark circles.</p>
+</div>
+
+<div class="tip-card" data-aos="slide-down">
+  <span class="step-number">7</span>
+  <h3>Face Oil</h3>
+  <p>Use a few drops of facial oil to nourish and lock in extra moisture.</p>
+</div>
+
+<div class="tip-card" data-aos="slide-down">
+  <span class="step-number">8</span>
+  <h3>Night Mask</h3>
+  <p>Finish your routine with an overnight mask for deep skin repair.</p>
+</div>
+
+<div class="tip-card" data-aos="slide-down">
+  <span class="step-number">9</span>
+  <h3>Face Mist</h3>
+  <p>Spritz a refreshing face mist throughout the day to keep your skin hydrated and glowing.</p>
+</div>
+
+<div class="tip-card" data-aos="slide-down">
+  <span class="step-number">10</span>
+  <h3>Lip Care</h3>
+  <p>Finish your skincare by applying a nourishing lip balm to keep lips soft and smooth.</p>
+</div>
+
+</div>
+</section>
+<section class="faq-wrapper" data-aos="fade-right">
+
+  <!-- LEFT IMAGE -->
+  <div class="faq-image" data-aos="zoom-in">
+    <img src="faq.png" alt="FAQ Image">
+  </div>
+
+  <!-- RIGHT FAQ SECTION (Your original code) -->
+  <section class="faq-section">
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">1. Kya yeh products sensitive skin ke liye suitable hain?</button>
+        <div class="faq-answer"><p>Haan, hamare skincare products dermatologically tested hain aur sensitive skin ke liye safe hain.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">2. Delivery kitne dinon me hoti hai?</button>
+        <div class="faq-answer"><p>Delivery aam tor par 3–5 working dinon me ho jaati hai.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">3. Kya products 100% original hote hain?</button>
+        <div class="faq-answer"><p>Bilkul, hum sirf authentic aur trusted brands ke original products supply karte hain.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">4. Agar product suit na kare to return policy kya hai?</button>
+        <div class="faq-answer"><p>Aap 7 din ke andar unused product ko return kar sakte hain. Terms & conditions apply.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">5. Kya mujhe cash on delivery option milega?</button>
+        <div class="faq-answer"><p>Haan, hum Cash on Delivery (COD) option provide karte hain.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">6. Kya mujhe skincare routine ka guide milega?</button>
+        <div class="faq-answer"><p>Ji haan, hamari website par aapko "How to Use" section aur product details me guide milti hai.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">7. Kya free shipping available hai?</button>
+        <div class="faq-answer"><p>Free shipping specific order value cross karne par available hoti hai.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">8. Payment options kaun se hain?</button>
+        <div class="faq-answer"><p>Hum COD, debit/credit cards aur online banking accept karte hain.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">9. Agar product damage ho kar aaye to kya hoga?</button>
+        <div class="faq-answer"><p>Agar product damage ho to aap complaint file karke replacement ya refund le sakte hain.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question">10. Kya products cruelty-free hain?</button>
+        <div class="faq-answer"><p>Haan, hamare listed brands cruelty-free aur ethical practices follow karte hain.</p></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+<footer class="footer" data-aos="zoom-in">
+  <div class="footer-container">
+    
+    <!-- Brand -->
+    <div class="footer-about">
+      <h2 class="footer-brand">BloomAura</h2>
+      <p class="footer-tagline">Glow Naturally with our premium skincare and beauty products.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><a href="tel:+923001234567"> +92-300-1234567</a></p>
+      <p><a href="mailto:info@bloomaura.com"> info@bloomaura.com</a></p>
+      <p> Lahore, Pakistan</p>
+      <p> Mon–Sat: 9am–6pm</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="skincare.html">Skincare</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-policies">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 BloomAura. All Rights Reserved.</p>
+    <a href="home.html" class="back-to-top">⬆ Top</a>
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="skincare.js"></script>
+<!-- Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="pName"></h2>
+    <p id="pShade"></p>
+    <p id="pSkin"></p>
+    <p id="pPrice"></p>
+    <p id="pSize"></p>
+    <p id="pDescription"></p>
+    <p id="pAvability"></p>
+    
+  </div>
+</div>
+</body>
+
+ 
+
+ </html>
+  

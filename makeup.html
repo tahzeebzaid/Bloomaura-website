@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloomAura — Skincare & Makeup</title>
+  <link rel="icon" type="image/png" href="logos.png">
+  <link rel="stylesheet" href="makeup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+</head>
+<body>
+   <!-- Notification Bar -->
+<div class="notification-wrap">
+  <div class="notification">
+    <span id="notif-text"></span>
+  </div>
+  <a class="notif-cta" href="signin.html">Sign In</a>
+</div>
+
+<!-- Header / Navbar -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="logos.png" alt="BloomAura Logo" class="logo-icon" />
+      <div class="logo-texts">
+        <div class="brand">BloomAura</div>
+        <div class="tagline">Skincare & Makeup Products</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html" class="active">Home</a></li>
+       
+        
+          <li><a href="skincare.html">Skincare</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+    
+        
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero-section">
+  <div class="hero-slider">
+
+    <!-- Slide 1 – Video -->
+    <div class="slide active" data-type="video">
+      <video class="slide-media" autoplay muted loop playsinline>
+        <source src="video7.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Slide 2 – Image -->
+    <div class="slide" data-type="video">
+      <video class="slide-media" autoplay muted loop playsinline>
+        <source src="3181672-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Slide 3 – Video -->
+    <div class="slide" data-type="video">
+      <video class="slide-media" autoplay muted loop playsinline>
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Slide 4 – Image -->
+    <div class="slide" data-type="video">
+       <video class="slide-media" autoplay muted loop playsinline>
+        <source src="video5.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Slide 5 – Video -->
+    <div class="slide" data-type="video">
+      <video class="slide-media" autoplay muted loop playsinline>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="slider-dots"></div>
+  </div>
+</section>
+
+<section class="makeup-collection" data-aos="fade-up">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-heading"> Our Makeup Collection </h2>
+
+    <div class="product-grid" data-aos="fade-up">
+      <!-- Repeat this product-card 12 times -->
+      <div class="product-card" data-aos="zoom-in">
+        <img src="lipstick.png" alt="Lipstick" class="product-image">
+        <h3 class="product-name">Luxury Matte Lipstick</h3>
+        <p class="product-desc">Velvet finish, long-lasting formula</p>
+        <p class="product-price">PKR 150</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details"  onclick="openModal('Lipstick','Red, Pink, Brown, Cofee, Orange, Purple',' For All Skin Types','Rs.150','20ml, 30ml, 40ml ',
+                  'Lipstick enhances natural beauty by adding color, confidence, and charm to your overall look. It complements different skin tones and instantly brightens the face with just one swipe. From soft nudes to bold shades, lipstick helps express mood, style, and personality effortlessly.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <!-- You can change product details below -->
+      <div class="product-card" data-aos="zoom-in">
+        <img src="foundation.png" alt="Foundation" class="product-image">
+        <h3 class="product-name">Glow Foundation</h3>
+        <p class="product-desc"> Full coverage foundation</p>
+        <p class="product-price">PKR 1299</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details"  onclick="openModal('Matte Foundation','Fair Beige, Warm Nude, Golden Beige , Warm Natural, Mocha',' For All Skin Types','Rs.1299','100ml, 150ml, 200ml ',
+                  'Provides smooth, even coverage for a flawless complexion.Lightweight formula blends easily without feeling heavy on skin.Long-lasting finish keeps your makeup fresh throughout the day.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="eyeshadow.png" alt="Eyeshadow Palette" class="product-image">
+        <h3 class="product-name"> Eyeshadow Palette</h3>
+        <p class="product-desc">12 shimmer & matte shades</p>
+        <p class="product-price">PKR 400</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Eyeshadow Palette','Dark, Nude, Shimmer',' For All Skin Types','Rs.400','20ml, 30ml, 40ml ',
+                  'Eyeshadow enhances the beauty of your eyes by adding depth, color, and dimension to the eyelids. It helps highlight eye shape and can create soft, natural looks or bold, dramatic styles. Available in various shades and finishes, eyeshadow allows endless creativity for everyday wear or special occasions.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="blush.png" alt="Blush" class="product-image">
+        <h3 class="product-name">Rosy Glow Blush</h3>
+        <p class="product-desc">Soft pigment for a natural flush</p>
+        <p class="product-price">PKR 599</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details"  onclick="openModal('Blush','Pink, Red, Cherry, Baby pink',' For All Skin Types','Rs.599','100ml, 200ml ',
+                  'Adds a natural pop of color to enhance your cheeks and brighten your complexion. Smooth, blendable texture applies effortlessly for a fresh and radiant look. Long-lasting formula keeps your glow intact throughout the day.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <!-- Duplicate above 8 more cards with different images and names -->
+      <div class="product-card" data-aos="zoom-in">
+        <img src="highlighter1.png" alt="Highlighter" class="product-image">
+        <h3 class="product-name">Golden Highlighter</h3>
+        <p class="product-desc">Radiant glow for all skin tones</p>
+        <p class="product-price">PKR 400</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Golden highlighter','Golden, Brown, Silver',' For All Skin Types','Rs.400','20ml, 30ml, 40ml ',
+                  'Golden highlighter adds a warm, radiant glow that instantly brightens the skin and enhances natural features. Its soft shimmer reflects light beautifully, giving a sun-kissed and luminous finish. Perfect for all occasions, it creates a healthy, glowing look without appearing heavy or overdone.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="mascara.png" alt="Mascara" class="product-image">
+        <h3 class="product-name">Lash Lift Mascara</h3>
+        <p class="product-desc">Volumizing and waterproof</p>
+        <p class="product-price">PKR 400</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Mascara','Black',' For All Skin Types','Rs.400','20ml, 30ml, 40ml ',
+                  'Mascara enhances the natural beauty of your eyes by adding length, volume, and definition to your lashes. It makes lashes appear darker and fuller, giving the eyes a more open and expressive look. Suitable for everyday wear or special occasions, mascara instantly completes any makeup look.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="concelar.png" alt="Concealer" class="product-image">
+        <h3 class="product-name">Perfect Cover Concealer</h3>
+        <p class="product-desc">Lightweight, crease coverage</p>
+        <p class="product-price">PKR 400</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Concelar','Golden, Brown, Fair',' For All Skin Types','Rs.400','20ml, 30ml, 40ml ',
+                  'A creamy, blendable concealer that effectively hides dark circles, blemishes, and imperfections. It provides seamless coverage without creasing or feeling heavy on the skin. Perfect for achieving a bright, smooth, and flawless complexion.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="eyelinear.png" alt="Eyeliner" class="product-image">
+        <h3 class="product-name">Precision Liquid Eyeliner</h3>
+        <p class="product-desc">Smudge-proof, fine tip control</p>
+        <p class="product-price">PKR 300</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Eyelinear','Black',' For All Skin Types','Rs.300','20ml, 30ml, 40ml ',
+                  'A long-lasting, richly pigmented eyeliner that glides on smoothly for precise definition. It enhances your eyes with bold, smudge-free lines that stay put all day. Perfect for creating both subtle everyday looks and dramatic styles.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="liptint.png" alt="Lip Gloss" class="product-image">
+        <h3 class="product-name">Shimmer Lip Gloss</h3>
+        <p class="product-desc">Hydrating glossy shine</p>
+        <p class="product-price">PKR 499</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Rose Lip Tint','Pink, Red, Cherry , Baby pink ',' For All Skin Types','Rs.499','30ml, 50ml,70ml ',
+                  'Adds a natural flush of color for a fresh, youthful look.Lightweight and non-sticky formula feels comfortable on lips.Long-lasting tint keeps your lips looking vibrant all day. ','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="blushpalette.png" alt="Contour Palette" class="product-image">
+        <h3 class="product-name">Blush Palette</h3>
+        <p class="product-desc">Radiant glow, natural flush.</p>
+        <p class="product-price">PKR 300</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Blushpalette','Red, Pink, Cherry',' For All Skin Types','Rs.300','20ml, 30ml, 40ml ',
+                  'A versatile blush palette featuring beautifully pigmented shades to add a natural flush to your cheeks. The silky-smooth formula blends effortlessly for a radiant, buildable finish. Perfect for creating soft everyday looks or bold, glam styles.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="fixer.png" alt="Setting Spray" class="product-image">
+        <h3 class="product-name">Mist Setting Spray</h3>
+        <p class="product-desc">Locks in makeup for 12 hours</p>
+        <p class="product-price">PKR 400</p>
+        <div class="product-rating">⭐⭐⭐⭐☆</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details"  onclick="openModal('Makeup Fixer','Transparent',' For All Skin Types','Rs.400','30ml, 50ml, 100ml ',
+                  'A refreshing makeup fixer that locks your makeup in place for long-lasting wear. It helps prevent smudging, fading, and creasing while keeping your skin feeling light and comfortable. Perfect for a fresh, flawless look that lasts all day.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in">
+        <img src="compact powder.png" alt="Brow Kit" class="product-image">
+        <h3 class="product-name">Compact Powder</h3>
+        <p class="product-desc">Flawless finish silky smooth touch</p>
+        <p class="product-price">PKR 200</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <div class="card-buttons">
+          <button class="btn add-cart">Add to Cart</button>
+          <button class="btn details" onclick="openModal('Compact Powder','White, Silver, Orange',' For All Skin Types','Rs.200','20ml, 30ml, 50ml ',
+                  'A finely milled compact powder that blends effortlessly to give your skin a soft, natural finish. It helps absorb excess oil and minimizes shine without feeling heavy. Perfect for setting makeup and keeping your complexion fresh and smooth all day.','In Stock'); return false;">More Details</button>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<section class="offer-banner" data-aos="flip-left">
+  <div class="offer-content" data-aos="flip-left">
+    <h2 class="offer-heading" data-aos="fade-up"> Limited Edition Offers </h2>
+    <p class="offer-text" id="offerText">20% Off on New Lip Shades!</p>
+  </div>
+</section>
+<section class="makeup-tutorials-slider" data-aos="fade-down">
+  <h2 class="section-heading"> Makeup Tutorials</h2>
+
+  <div class="slider-container" data-aos="fade-up">
+    <div class="slider-track" data-aos="slide-left">
+      <!-- Video 1 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="eyemakeupthumb.png">
+          <source src="eyeshadow2.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Perfect Eye Makeup</h3>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="foundationthumb.png">
+          <source src="foundation.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Foundation Hack</h3>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="glossylipthumb.png">
+          <source src="glossyliptutorial.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Glossy Lips Look</h3>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="contourthumb.png">
+          <source src="contour.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Natural Contour</h3>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="glammakeupthumb.png">
+          <source src="glammakeup.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Night Glam Look</h3>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="blushthumb.png">
+          <source src="blush.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Perfect Blush Technique</h3>
+      </div>
+
+      <!-- Video 7 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="highlighterthumb.png">
+          <source src="highlighter.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Radiant Highlight</h3>
+      </div>
+
+      <!-- Video 8 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="eyelinerthumb.png">
+          <source src="eyelinertutorial.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Perfect Eyeliner</h3>
+      </div>
+      <!-- Video 8 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="mascarathumb.png">
+          <source src="mascara.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Mascara </h3>
+      </div>
+      <!-- Video 8 -->
+      <div class="tutorial-card">
+        <video class="tutorial-video" controls poster="concealerthumb.png">
+          <source src="concealer.mp4" type="video/mp4">
+        </video>
+        <h3 class="tutorial-title">Concealer Hack</h3>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="slider-btn prev-btn">&#10094;</button>
+    <button class="slider-btn next-btn">&#10095;</button>
+  </div>
+</section>
+
+<section class="makeup-steps-section" data-aos="fade-up">
+  <div class="makeup-steps-container" data-aos="fade-left">
+
+    <!-- Left: Steps Box -->
+    <div class="steps-box" data-aos="zoom-in">
+      <h2><span> Steps To Follow for a Makeup Look</span></h2>
+      <div class="steps-grid" data-aos="zoom-in">
+        <div class="step-item">Sunscreen</div>
+        <div class="step-item">Moisturizer</div>
+
+        <div class="step-item">Primer</div>
+        <div class="step-item">Colour Corrector</div>
+
+        <div class="step-item">Foundation</div>
+        <div class="step-item">Concealer</div>
+
+        <div class="step-item">Eyeshadow</div>
+        <div class="step-item">Blush / Tint</div>
+
+        <div class="step-item">Lipstick</div>
+        <div class="step-item">Lip Gloss</div>
+
+        <div class="step-item">Eyeliner</div>
+        <div class="step-item">Mascara</div>
+
+       
+      </div>
+    </div>
+
+    <!-- Right: Video -->
+    <div class="steps-video" data-aos="fade-left">
+      <video autoplay muted loop playsinline>
+        <source src="makeuptutorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+
+  </div>
+</section>
+<section class="before-after-section" data-aos="fade-up" >
+  <h2 class="section-heading" data-aos="zoom-in">
+     See the Magic: <span>Before & After</span>
+  </h2>
+  <p class="section-subheading" data-aos="zoom-in">
+    Real transformations using our exclusive makeup tutorials
+  </p>
+
+  <div class="before-after-slider" data-aos="zoom-in">
+    <!-- Slide 1 -->
+    <div class="ba-slide active">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforemakeup.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="aftermakeup.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Natural Glam Makeup</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforebold.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="afterbold.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Light Makeup Look</p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforeparty.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="afterparty.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Wedding Party Look</p>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforekorean.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="afterkorean.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Korean Makeup Look</p>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforelips.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="afterlip.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Simple Look</p>
+    </div>
+     <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforegloss.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="aftergloss.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Glossy Lips Look</p>
+    </div>
+     <div class="ba-slide">
+      <div class="ba-images">
+        <div class="ba-box">
+          <img src="beforedarks.png" alt="Before Look">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-box">
+          <img src="afterdark.png" alt="After Look">
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-caption">Dark Makeup Look</p>
+    </div>
+
+    <!-- Arrows -->
+    <button class="ba-arrow left">&#10094;</button>
+    <button class="ba-arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+
+<footer class="footer" data-aos="zoom-in">
+  <div class="footer-container" data-aos="zoom-in">
+    
+    <!-- Brand -->
+    <div class="footer-about">
+      <h2 class="footer-brand">BloomAura</h2>
+      <p class="footer-tagline">Glow Naturally with our premium skincare and beauty products.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><a href="tel:+923001234567">+92-300-1234567</a></p>
+      <p><a href="mailto:info@bloomaura.com"> info@bloomaura.com</a></p>
+      <p> Lahore, Pakistan</p>
+      <p> Mon–Sat: 9am–6pm</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="skincare.html">Skincare</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-policies">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 BloomAura. All Rights Reserved.</p>
+    <a href="home.html" class="back-to-top">⬆ Top</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="makeup.js"></script>
+  <!-- Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="pName"></h2>
+    <p id="pShade"></p>
+    <p id="pSkin"></p>
+    <p id="pPrice"></p>
+    <p id="pSize"></p>
+    <p id="pDescription"></p>
+    <p id="pAvability"></p>
+    
+  </div>
+</div>
+</body>
+
+ 
+
+ </html>

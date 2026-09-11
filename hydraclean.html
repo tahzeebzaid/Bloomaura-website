@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra Cleanser - BloomAura</title>
+  <link rel="icon" type="image/png" href="logos.png">
+  <link rel="stylesheet" href="hydraclean.css">
+</head>
+<body>
+   <!-- Notification Bar -->
+<div class="notification-wrap">
+  <div class="notification">
+    <span id="notif-text"></span>
+  </div>
+  <a class="notif-cta" href="signin.html">Sign In</a>
+</div>
+
+<!-- Header / Navbar -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="logos.png" alt="BloomAura Logo" class="logo-icon" />
+      <div class="logo-texts">
+        <div class="brand">BloomAura</div>
+        <div class="tagline">Skincare & Makeup Products</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html" class="active">Home</a></li>
+       
+        
+          <li><a href="skincare.html">Skincare</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+    
+        
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="product-detail">
+  <h1 class="product-title">Hydra Cleanser</h1>
+  <div class="product-wrapper">
+
+    <!-- Left: Images -->
+    <div class="product-images">
+      <img src="hydraclean.png" alt="Hydra Cleanser" class="main-img">
+      <div class="thumbs">
+        <img src="hydraclean2.png" class="thumb">
+        <img src="hydraclean8.png" class="thumb">
+        <img src="hydraclean7.png" class="thumb">
+        <img src="hydraclean6.png" class="thumb">
+      </div>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="product-info">
+      <h2>Gentle Hydra Cleanser</h2>
+      <p class="price">PKR 899</p>
+      <p class="availability"><strong>Availability:</strong> In Stock</p>
+      <p class="delivery"><strong>Delivery:</strong> 2–4 Business Days</p>
+      <p class="desc">
+        Hydra Cleanser is a gentle yet powerful daily 
+        skincare essential that not only removes dirt, excess oil, and makeup residue but also nourishes the skin from within. 
+        Infused with Aloe Vera extract, it provides deep hydration and soothes irritation, making it ideal for sensitive skin. 
+        A blend of Chamomile and Green Tea extracts helps calm redness, reduce inflammation, and rejuvenate tired skin.
+        Makes it a must-have for anyone who wants glowing, healthy-looking skin.
+        Hydra Cleanser gently removes dirt, oil, and impurities without stripping your skin’s natural moisture.
+Enriched with hydrating ingredients, it leaves your face feeling fresh, soft, and supple.
+Specially designed for daily use, it balances skin while maintaining a healthy glow.
+Suitable for all skin types, including sensitive and dry skin.
+Lightweight, non-foaming formula that refreshes without causing tightness.
+Your first step to a clean, radiant, and healthy-looking complexion.
+      </p>
+
+      <div class="options">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1">
+        <label for="size">Size:</label>
+        <select id="size">
+          <option>100ml Bottle</option>
+          <option>200ml Bottle</option>
+          <option>500ml Bottle</option>
+        </select>
+      </div>
+
+      <button class="btn-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+  
+
+
+  <!-- About + How to Use Section -->
+<section class="about-hydra">
+  <div class="about-box">
+    
+    <!-- About Hydra Cleanser -->
+    <div class="about-card">
+      <h2>About Hydra Cleanser</h2>
+      <p>
+        Hydra Cleanser is available in <b>100ml, 200ml, and 500ml bottles</b>. 
+        Its lightweight formula deeply cleanses impurities while keeping your skin hydrated. 
+        Infused with aloe vera, green tea, and vitamin E to refresh and nourish skin.
+        Specially designed for daily use, it balances skin while maintaining a healthy glow.
+        Infused with nourishing extracts to calm and soothe tired skin.
+Dermatologically tested for safe, everyday cleansing.
+      </p>
+      <p>
+        Free from <b>parabens, sulfates, and harsh chemicals</b>, making it safe 
+        </p>
+      
+      
+      
+    </div>
+
+    <!-- How to Use -->
+    <div class="about-card">
+      <h3>How to Use</h3>
+      <ul class="steps">
+        <li><span>①</span> Apply small amount to damp face</li>
+        <li><span>②</span> Massage gently in circular motion</li>
+        <li><span>③</span> Rinse thoroughly with lukewarm water</li>
+        <li><span>④</span> Pat dry using a soft towel, avoiding harsh rubbing to protect skin barrier.</li>
+        <li><span>⑤</span> Follow up with your favorite toner  for best results.</li>
+        <li><span>⑥</span> Finish with a moisturizer or sunscreen to lock in hydration.</li>
+    </div>
+
+    
+  <!-- Rotating Images -->
+  <div class="about-img">
+    <img id="aboutImage" src="hydraclean11.png" alt="Hydra Cleanser Bottle">
+  </div>
+
+  
+</section>
+
+
+  <!-- Testimonials Section -->
+  <!-- Testimonials Section -->
+<section class="product-testimonials" id="product-testimonials">
+  <div class="testimonials-inner">
+    <h2>Customer Reviews</h2>
+
+    <!-- Carousel / Grid wrapper -->
+    <div class="testimonials-wrap">
+
+      <!-- Prev / Next controls -->
+      <button class="test-nav test-prev" aria-label="Previous review">‹</button>
+
+      <div class="testimonial-track" id="testimonial-track">
+        <!-- Each .testimonial-card can be repeated or injected from JS -->
+        <article class="testimonial-card featured">
+          <div class="card-top">
+            <img src="girl13.png" alt="Ayesha" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Ayesha</strong>
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">“My skin feels so fresh after using Hydra Cleanser. Love it! It calmed my redness and left a gentle glow without dryness.”</p>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="card-top">
+            <img src="girl18.png" alt="Hina" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Hina</strong>
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">“Best cleanser ever — removes dirt and light makeup without stripping oils. Friendly on sensitive skin.”</p>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="card-top">
+            <img src="girl2.png" alt="Sana" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Sana</strong>
+              <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">“Perfect for my sensitive skin. Gentle lather and no stinging. My face feels smoother after two weeks.”</p>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="card-top">
+            <img src="girl11.png" alt="Mariam" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Mariam</strong>
+              <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">“Worth the price — nice packaging and a premium feel. Leaves skin soft.”</p>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="card-top">
+            <img src="girl16.png" alt="Zara" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Zara</strong>
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">“My go-to cleanser now, using it daily. Gentle and reliable.”</p>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="card-top">
+            <img src="girl17.png" alt="Fatima" class="review-avatar">
+            <div class="review-meta">
+              <strong class="review-name">Fatima</strong>
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">“Skin feels hydrated, soft and smooth. Must try — especially for dry skin days.”</p>
+        </article>
+      </div>
+
+      <button class="test-nav test-next" aria-label="Next review">›</button>
+    </div>
+
+    <!-- Dots for carousel -->
+    <div class="testimonial-dots" id="testimonial-dots" aria-hidden="false"></div>
+  </div>
+</section>
+<!-- Related Products Section -->
+<section class="related-products">
+  <h2>Related Products</h2>
+  <div class="products-grid">
+    
+    <!-- Product 1 -->
+    <a href="hydramask.html" class="product-card">
+      <img src="hydramask.png" alt="Hydra Mask">
+      <div class="prod-info">
+        <h3>Hydra Mask</h3>
+        <p>Deeply nourishes & revitalizes skin with hydrating formula.</p>
+      </div>
+    </a>
+
+    <!-- Product 2 -->
+    <a href="facewash.html" class="product-card">
+      <img src="facewash.png" alt="Facewash">
+      <div class="prod-info">
+        <h3>Facewash</h3>
+        <p>Gentle daily cleanser to remove dirt & excess oil.</p>
+      </div>
+    </a>
+
+    <!-- Product 3 -->
+    <a href="vitaminc.html" class="product-card">
+      <img src="vitamin c.png" alt="Vitamin C Serum">
+      <div class="prod-info">
+        <h3>Vitamin C Serum</h3>
+        <p>Brightens skin tone and reduces dark spots naturally.</p>
+      </div>
+    </a>
+
+    <!-- Product 4 -->
+    <a href="glowserum.html" class="product-card">
+      <img src="glowserum.png" alt="Glow Serum">
+      <div class="prod-info">
+        <h3>Glow Serum</h3>
+        <p>Gives instant radiance & boosts skin hydration.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Brand -->
+    <div class="footer-about">
+      <h2 class="footer-brand">BloomAura</h2>
+      <p class="footer-tagline">Glow Naturally with our premium skincare and beauty products.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><a href="tel:+923001234567">📞 +92-300-1234567</a></p>
+      <p><a href="mailto:info@bloomaura.com">📧 info@bloomaura.com</a></p>
+      <p>🏬 Lahore, Pakistan</p>
+      <p>🕘 Mon–Sat: 9am–6pm</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="skincare.html">Skincare</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-policies">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 BloomAura. All Rights Reserved.</p>
+    <a href="home.html" class="back-to-top">⬆ Top</a>
+  </div>
+</footer>
+
+  <script src="hydraclean.js"></script>
+</body>
+</html>

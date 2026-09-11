@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="signup-style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- Notification Bar -->
+<div class="notification-wrap">
+  <div class="notification">
+    <span id="notif-text"></span>
+  </div>
+  <a class="notif-cta" href="signin.html">Sign In</a>
+</div>
+
+<!-- Header / Navbar -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="logos.png" alt="BloomAura Logo" class="logo-icon" />
+      <div class="logo-texts">
+        <div class="brand">BloomAura</div>
+        <div class="tagline">Skincare & Makeup Products</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html" class="active">Home</a></li>
+       
+        
+          <li><a href="skincare.html">Skincare</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+    
+        
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <p class="subtitle">Fill in the details to register your new account.</p>
+
+    <form id="signupForm">
+      <!-- Full Name -->
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Full Name" class="input-box" required>
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="your@email.com" class="input-box" required>
+      </div>
+
+      <!-- Phone Number (optional) -->
+      <div class="input-group">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" placeholder="Phone Number (optional)" class="input-box">
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Password" class="input-box" required>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" class="input-box" required>
+      </div>
+      <small class="password-rule">Password must be at least 8 characters</small>
+
+      <!-- Profile Picture -->
+      <div class="input-group file-upload">
+        <i class="fa-solid fa-image"></i>
+        <input type="file" class="input-box file-input" accept="image/*">
+      </div>
+
+      <!-- Register Button -->
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <!-- Extra Links -->
+    <div class="extra-links">
+      <a href="signin.html">Already have an account? Sign In</a>
+    </div>
+  </div>
+
+  
+<footer class="footer" data-aos="zoom-in">
+  <div class="footer-container" data-aos="zoom-in">
+    
+    <!-- Brand -->
+    <div class="footer-about">
+      <h2 class="footer-brand">BloomAura</h2>
+      <p class="footer-tagline">Glow Naturally with our premium skincare and beauty products.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><a href="tel:+923001234567">+92-300-1234567</a></p>
+      <p><a href="mailto:info@bloomaura.com"> info@bloomaura.com</a></p>
+      <p> Lahore, Pakistan</p>
+      <p> Mon–Sat: 9am–6pm</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="skincare.html">Skincare</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-policies">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 BloomAura. All Rights Reserved.</p>
+    <a href="home.html" class="back-to-top">⬆ Top</a>
+  </div>
+</footer>
+
+  <script src="signup-script.js"></script>
+</body>
+
+ 
+
+ </html>
+  
+
+
